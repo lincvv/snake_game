@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>GAME</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="jquery_ui/jquery-ui.css" type="text/css" media="screen" />
+
+	<script  src="js/onload.js"></script>
+	<script  src="js/game.js"></script>
+	<script  src="js/jquery.js"></script> 
+	<script  src="jquery_ui/jquery-ui.js"></script>
+	<script  src="js/dialog.js"></script>
+	<script  src="js/square.js"></script>	
+	<script  src="js/matrix.js"></script>
+	<script  src="js/snake.js"></script>
+	
+	<script  src="js/animate.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mockjax/1.6.2/jquery.mockjax.min.js"></script>
+	<script src="js/ajax.js"></script>
+</head>
+<body>
+
+	<button id="resetLocalStorage">reset</button>
+	<div id="matrix1"></div>
+	<!-- <div id="block"></div>	 -->
+		
+	
+	<div id="panel">
+		
+	
+	<div id="status">
+		Имя: <span id="name_status"></span><br/>
+		Уровень: <span id="level_status"></span><br/>
+		Сложность: <span id="difficult_status"></span><br/>
+		Очки: <span id="point_status"></span><br/>
+		<div id="time">Время: <br/><span id="time_status"></span></div>
+	</div>
+
+	<div id="check" tabindex="" ><input type="checkbox" id="start"/><label for="start"></label></div>
+	<div id="block-search"></div>
+	<input id="search" type="text" placeholder="search" name="search"/>
+	<div id="record">
+		<!-- <span>Рекорды:</span> </br> -->
+		
+	</div>
+
+	<div class="difficult">
+	Сложность игры:<br/>
+	<input type="radio" name="difficult" value="easy" id="difficult_easy" checked="checked" />
+	<label for="difficult_easy">Легко</label>
+	<input type="radio" name="difficult" value="normal" id="difficult_normal"/>
+	<label for="difficult_normal">Нормально</label>
+	<input type="radio" name="difficult" value="hard" id="difficult_hard"/>
+	<label for="difficult_hard">Тяжело</label>	
+	</div>
+
+	</div>
+
+	<div id="slider">
+	<p>
+  	<label for="amount">Speed:</label>
+  	<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;"> 
+	</p>
+	<div id="slider-vertical" style="height:200px;"></div>
+	</div>	
+
+	<div id="dialog" title="">
+  	<p><span id="result_name"></span></br>
+  	<span class="result" style="float:left; margin:0 7px 20px 0;"></span> 
+  	<span id="point"></span></p>
+  	<input id="login" type="text" placeholder="Введите имя" name="login"/>
+	</div>
+	
+	
+	
+</body>
+</html>
